@@ -13,11 +13,11 @@ public class Ronda {
     public Ronda(int numero, List<Resultado> resultados) {
         this.numero = numero;
         this.partidos = new ArrayList<>();
-        for (int i = 0; i < resultados.size(); i += 2) {
+        for (int i = 0; i<=1;i++) {
         	boolean primerPartido = i == 0;
         	Partido partido = primerPartido ?
-            new Partido(resultados.get(i), resultados.get(i + 1), true) :
-            new Partido(resultados.get(i), resultados.get(i + 1), false);
+            new Partido(resultados.get(i), resultados.get(i), true) :
+            new Partido(resultados.get(i), resultados.get(i), false);
             this.partidos.add(partido);
         }
     }

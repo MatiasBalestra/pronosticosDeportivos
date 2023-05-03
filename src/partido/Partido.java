@@ -10,15 +10,15 @@ public class Partido {
     
     public Partido(Resultado resultado1, Resultado resultado2, boolean usarResultado1) {
         if (usarResultado1) {
-            this.equipo1 = resultado1.getEquipo1();
-            this.equipo2 = resultado1.getEquipo2();
-            this.goles1 = resultado1.getGoles1();
-            this.goles2 = resultado1.getGoles2();
-        } else {
             this.equipo1 = resultado2.getEquipo1();
             this.equipo2 = resultado2.getEquipo2();
             this.goles1 = resultado2.getGoles1();
             this.goles2 = resultado2.getGoles2();
+        } else {
+            this.equipo1 = resultado1.getEquipo1();
+            this.equipo2 = resultado1.getEquipo2();
+            this.goles1 = resultado1.getGoles1();
+            this.goles2 = resultado1.getGoles2();
         }
     }
     
